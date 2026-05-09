@@ -1,41 +1,15 @@
-### Question 1: Understand the scenario (50–100 words)
+### Question 1: Understand the scenario (100–150 words)
 
-A healthcare insurance company receives thousands of medical claims daily, making manual claim verification slow and error-prone. The company wants to build an AI/ML system that automatically detects fraudulent or duplicate claims while improving approval speed for genuine customers. The major challenge is handling large-scale real-time data while maintaining accuracy and reducing operational costs. Additional constraints include data privacy regulations, scalability during peak claim periods, and ensuring the solution integrates smoothly with existing enterprise systems and workflows.
-
----
-
-### Question 2: Analyze the problem (50–100 words)
-
-The core problem is identifying fraudulent or duplicate insurance claims quickly and accurately from massive healthcare datasets. Machine learning classification techniques such as Random Forest, XGBoost, or Neural Networks can be applied to detect suspicious claim patterns. Feature engineering, anomaly detection, and data preprocessing are essential for improving prediction quality. The solution must support scalability, low latency, and secure handling of sensitive patient information. Business requirements include reducing fraud losses, improving customer satisfaction, and minimizing manual review efforts while maintaining regulatory compliance and operational efficiency.
+Deploying an ML model to optimize energy usage in a smart city presents several important challenges. The first challenge is data privacy, as the system collects detailed energy consumption data from households and businesses. Improper handling of this data could expose personal behavior patterns and create security risks. The second challenge is equity, where the ML model may prioritize energy distribution to certain neighborhoods while underserved regions receive fewer benefits, leading to unfair access to resources. The third challenge is cost management because implementing smart sensors, cloud infrastructure, and continuous model maintenance requires significant financial investment. These challenges can impact public trust, government policies, and long-term sustainability. Therefore, the deployment must balance efficiency, fairness, privacy protection, and operational affordability to ensure successful adoption across the smart city ecosystem.
 
 ---
 
-### Question 3: Design the solution (400–550 words)
+### Question 2: Analyze the challenges (100–150 words)
 
-The proposed AI/ML solution focuses on detecting fraudulent and duplicate healthcare insurance claims using a scalable cloud-based architecture. The system is designed to process large amounts of claim data efficiently while maintaining high prediction accuracy and cost optimization.
+One major implication of deploying the ML model is the risk of privacy violations for users if sensitive energy usage data is leaked or misused. Utility companies and governments may also face legal and reputational consequences if proper security measures are not implemented. Another implication is inequitable energy distribution, where biased models could allocate resources unfairly across regions or income groups, negatively affecting public trust and social equality. Environmental sustainability may also suffer if certain areas experience inefficient energy optimization. The third implication is increased operational and infrastructure costs due to smart devices, cloud computing, and ongoing system maintenance. To address these challenges, organizations should implement strong encryption, anonymization, fairness-aware AI models, and cost-efficient cloud infrastructure with auto-scaling capabilities. Continuous monitoring and audits can further improve transparency, reliability, and long-term sustainability.
 
-#### 1. Data collection and preprocessing
+---
 
-The model will use multiple data sources, including historical insurance claims, patient records, provider information, billing codes, claim amounts, and real-time claim submissions. External datasets such as fraud blacklists and anomaly reports may also be integrated to improve prediction accuracy.
+### Question 3: Propose solutions (100–150 words)
 
-Data preprocessing is critical to ensure reliable model performance. Missing values will be handled using imputation techniques, while duplicate records and inconsistent formats will be removed. Numerical features such as billing amounts and claim frequency will be normalized using scaling techniques. Categorical fields like provider type or diagnosis code will be encoded using label encoding or one-hot encoding. Feature engineering techniques such as days between claims, claim frequency patterns, and provider behavior analysis will help improve fraud detection capability.
-
-#### 2. Model selection
-
-Since the problem is primarily a classification task, models such as Random Forest and XGBoost are suitable because they perform well on structured healthcare datasets and can handle imbalanced data effectively. XGBoost is especially useful because it provides high accuracy, fast training, and strong performance for fraud detection problems.
-
-To address class imbalance, oversampling methods such as SMOTE or class-weight balancing will be applied. Hyperparameter tuning using Grid Search or Bayesian Optimization will improve model accuracy and reduce overfitting. Evaluation metrics such as Precision, Recall, F1-score, and ROC-AUC will be used because fraud detection requires minimizing false negatives while maintaining overall accuracy.
-
-#### 3. Deployment strategy
-
-The solution will be deployed using cloud platforms such as Microsoft Azure or AWS for scalability and flexibility. The trained model will be containerized using Docker and managed through Kubernetes for efficient orchestration and auto-scaling. REST APIs developed with FastAPI will allow real-time claim predictions.
-
-Load balancing and horizontal scaling will ensure that the system can handle peak workloads during high claim submission periods. CI/CD pipelines using GitHub Actions or Jenkins will automate model deployment, testing, and updates. A hybrid cloud approach may also be considered for organizations with strict compliance requirements.
-
-#### 4. Cost optimization
-
-To reduce operational costs, auto-scaling cloud resources will allocate compute power only when required. Batch processing can be used for non-urgent claims, while real-time inference will be reserved for high-priority cases. Spot instances and serverless computing services can further reduce infrastructure expenses. Model optimization techniques such as pruning and quantization may also reduce computational overhead without significantly affecting accuracy.
-
-#### 5. Monitoring and maintenance
-
-After deployment, the system will continuously monitor metrics such as model accuracy, latency, error rates, and data drift. Tools like MLflow, Prometheus, and Grafana can help track performance in production. Automated retraining pipelines will update the model periodically using newly collected claims data to maintain prediction quality. Alerts will notify engineers if significant performance degradation or unusual prediction behavior is detected. This monitoring strategy ensures long-term reliability, scalability, and operational efficiency of the AI/ML solution.
+To address data privacy concerns, the smart city can implement differential privacy, encryption, and secure access controls to protect user energy consumption data. These techniques reduce the risk of unauthorized access while maintaining useful insights for ML predictions. To ensure equity, fairness-aware machine learning algorithms and regular bias audits should be used so that energy optimization benefits are distributed equally across all communities and demographics. Transparent reporting can also improve public trust. For cost management, cloud-based infrastructure with auto-scaling and edge computing can reduce unnecessary operational expenses by allocating resources only when needed. These solutions align with important AI/ML concepts such as ethical AI, responsible data governance, and cost-benefit optimization. By combining privacy protection, fairness, and efficient infrastructure management, the ML deployment can achieve sustainable and socially responsible energy optimization in a smart city.
