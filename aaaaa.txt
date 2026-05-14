@@ -1,21 +1,73 @@
-### 1. Prompt that asks a question using new public information since 2021
+### 1. Question Refinement Pattern
 
 **Prompt:**
-“Using only publicly available information, explain what OpenAI’s GPT-4o model is, when it was introduced, and how it differs from earlier GPT models such as GPT-3.5. Keep the answer under 150 words.”
+“You are an AI assistant using the Question Refinement Pattern. When I ask a vague or broad question, first refine it into a clearer, more specific question. Then provide the improved question and answer it. Repeat this process for multiple questions.”
 
-**Output:**
-GPT-4o is a multimodal large language model introduced by OpenAI in May 2024. The “o” stands for “omni,” meaning the model can process and generate text, images, and audio in real time. Compared to GPT-3.5, GPT-4o provides faster responses, stronger reasoning ability, and more natural voice interaction. It is designed to support conversational AI with lower latency and improved understanding across multiple formats. GPT-4o also expanded accessibility by making advanced AI capabilities available to more users through ChatGPT. Public demonstrations highlighted its ability to interpret visual inputs, translate speech instantly, and respond with human-like conversational timing.
+**Sample Output:**
+
+**User Question 1:** “Tell me about AI.”
+
+**Refined Question:**
+“What are the main applications of Artificial Intelligence in healthcare, finance, and education?”
+
+**Answer:**
+Artificial Intelligence is widely used in healthcare for medical diagnosis, drug discovery, and patient monitoring. In finance, AI helps with fraud detection, algorithmic trading, and customer support chatbots. In education, AI powers personalized learning platforms, automated grading, and virtual tutoring systems.
 
 ---
 
-### 2. Prompt that performs a task other than answering a question
+**User Question 2:** “How do I learn programming?”
+
+**Refined Question:**
+“What is a beginner-friendly roadmap for learning Python programming in 3 months?”
+
+**Answer:**
+Start with Python basics such as variables, loops, functions, and data structures during the first month. In the second month, practice problem-solving and build small projects like calculators or to-do apps. In the third month, learn libraries such as Pandas and Flask, and create a portfolio project to strengthen your skills.
+
+---
+
+**User Question 3:** “What is cloud computing?”
+
+**Refined Question:**
+“How does cloud computing work, and what are the differences between IaaS, PaaS, and SaaS?”
+
+**Answer:**
+Cloud computing provides computing resources such as storage, servers, and software over the internet. IaaS offers virtual infrastructure, PaaS provides development platforms, and SaaS delivers ready-to-use software applications through a web browser.
+
+---
+
+### 2. Cognitive Verifier Pattern
 
 **Prompt:**
-“Using publicly available information released after 2021 about generative AI, create a professional LinkedIn post announcing the impact of AI tools such as ChatGPT and GPT-4o on software development productivity. Keep the tone professional and optimistic.”
+“You are an AI assistant using the Cognitive Verifier Pattern. For every complex question, first break the task into smaller verification steps. Check assumptions, verify reasoning, and then provide the final answer with explanations.”
 
-**Output:**
-Exciting to see how generative AI continues to transform software development in 2024. Tools like ChatGPT and GPT-4o are helping developers accelerate coding, debugging, documentation, and testing workflows.
+**Sample Output:**
 
-AI-assisted development is reducing repetitive tasks and allowing engineers to focus more on innovation, system design, and problem-solving. Features such as multimodal input, real-time reasoning, and intelligent code generation are making collaboration between humans and AI more effective than ever.
+**User Question:**
+“Should a company migrate its applications from on-premise servers to the cloud?”
 
-As organizations adopt AI responsibly, the future of software engineering will likely become more productive, creative, and accessible for developers across all experience levels. #AI #GenerativeAI #SoftwareDevelopment #ChatGPT #Innovation
+**Verification Steps:**
+
+1. Identify the company’s current infrastructure costs.
+2. Evaluate scalability and performance needs.
+3. Compare security and compliance requirements.
+4. Estimate migration complexity and downtime risks.
+5. Analyze long-term maintenance and operational benefits.
+
+**Final Answer:**
+Migrating to the cloud can reduce infrastructure maintenance costs and improve scalability. Cloud platforms also provide flexible resource allocation and disaster recovery capabilities. However, migration may introduce short-term costs, training requirements, and security considerations. A hybrid approach is often recommended for organizations with strict compliance needs or legacy systems.
+
+---
+
+**User Question:**
+“What is the best machine learning model for fraud detection?”
+
+**Verification Steps:**
+
+1. Determine whether the dataset is balanced or imbalanced.
+2. Identify the type of fraud patterns in the data.
+3. Compare supervised and unsupervised learning methods.
+4. Evaluate performance metrics such as precision and recall.
+5. Test models using cross-validation.
+
+**Final Answer:**
+For fraud detection, ensemble models such as Random Forest and XGBoost are commonly effective because they handle complex patterns and imbalanced datasets well. Deep learning methods may work better for large-scale transaction data. Precision and recall are more important evaluation metrics than accuracy because fraud datasets are usually highly imbalanced.
