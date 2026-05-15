@@ -1,44 +1,96 @@
-## 1. Pattern: Persona Pattern
+## 1. Few-Shot Prompt for a Complex Task
+
+### Task: Classifying Customer Support Tickets
 
 ### Prompt
 
-“You are an experienced AI Project Manager with expertise in healthcare insurance systems. Explain the benefits of using Large Language Models in claims processing in simple language for a beginner.”
+“You are an AI support assistant. Classify customer support messages into categories: Billing Issue, Technical Problem, Account Access, or General Inquiry.
 
-### Output
+Example 1:
+Input: ‘I was charged twice for my subscription this month.’
+Output: Billing Issue
 
-Large Language Models (LLMs) can improve healthcare claims processing by automating repetitive tasks such as document review, claim classification, and summarization. They help reduce manual effort, improve accuracy, and speed up claim approvals. LLMs can also analyze medical documents, identify missing information, and assist customer support teams by answering common questions. This leads to faster processing times and improved efficiency for insurance companies and healthcare providers.
+Example 2:
+Input: ‘The application crashes whenever I upload a document.’
+Output: Technical Problem
+
+Example 3:
+Input: ‘I forgot my password and cannot log into my account.’
+Output: Account Access
+
+Now classify this message:
+‘My payment went through, but my premium features are still locked.’”
+
+### Sample Output
+
+Billing Issue
 
 ---
 
-## 2. Pattern: Summarization Pattern
+## 2. Few-Shot Prompt with Intermediate Sub-Steps
 
-### Information Provided Before the Prompt
-
-“The AI team discussed deploying a new fraud detection model for insurance claims. Rajni will prepare the deployment pipeline by Monday. Aman will test the API integration. The security team requested additional validation checks before production release. The team agreed to complete testing in the staging environment first.”
+### Task: Extracting Action Items from Meeting Notes
 
 ### Prompt
 
-“Summarize the following meeting notes into:
+“You are an AI meeting assistant. Perform the following steps:
 
-1. Key discussion points
-2. Action items
-3. Risks or blockers
+1. Identify important tasks mentioned in the text.
+2. Identify the owner of each task.
+3. Identify deadlines if available.
+4. Present the final answer in a table.
 
-Keep the summary short and professional.”
+Example 1:
 
-### Output
+Input:
+‘Raj will prepare the API documentation by Friday. Aman will test the login module next week.’
 
-### Key Discussion Points
+Step 1: Tasks Identified
 
-* The team discussed deployment of a new fraud detection model for insurance claims.
-* Testing will be completed in the staging environment before production release.
+* Prepare API documentation
+* Test login module
 
-### Action Items
+Step 2: Owners Identified
 
-* Rajni will prepare the deployment pipeline by Monday.
-* Aman will test the API integration.
-* Security team will review validation checks.
+* Raj
+* Aman
 
-### Risks / Blockers
+Step 3: Deadlines Identified
 
-* Additional validation requirements from the security team may delay production deployment.
+* Friday
+* Next week
+
+Final Output:
+
+| Task                      | Owner | Deadline  |
+| ------------------------- | ----- | --------- |
+| Prepare API documentation | Raj   | Friday    |
+| Test login module         | Aman  | Next week |
+
+Now process this input:
+
+‘Neha will deploy the fraud detection model by Monday. Ravi will validate the staging environment before production release.’”
+
+### Sample Output
+
+Step 1: Tasks Identified
+
+* Deploy fraud detection model
+* Validate staging environment
+
+Step 2: Owners Identified
+
+* Neha
+* Ravi
+
+Step 3: Deadlines Identified
+
+* Monday
+* Before production release
+
+Final Output:
+
+| Task                         | Owner | Deadline                  |
+| ---------------------------- | ----- | ------------------------- |
+| Deploy fraud detection model | Neha  | Monday                    |
+| Validate staging environment | Ravi  | Before production release |
