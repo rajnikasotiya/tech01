@@ -1,79 +1,44 @@
-### Prompt-Based Application: “AI Meeting & Task Summarizer”
+## 1. Pattern: Persona Pattern
 
-One daily problem I face is managing long project discussions, client meetings, and technical conversations. It is difficult to remember all action items, deadlines, and technical decisions after meetings. To solve this problem, I designed a prompt-based application using a Large Language Model called **AI Meeting & Task Summarizer**.
+### Prompt
 
-This application takes raw meeting notes, chat messages, or transcripts as input and automatically:
+“You are an experienced AI Project Manager with expertise in healthcare insurance systems. Explain the benefits of using Large Language Models in claims processing in simple language for a beginner.”
 
-* Summarizes the discussion
-* Extracts important action items
-* Identifies owners and deadlines
-* Creates follow-up email drafts
-* Highlights risks or blockers
+### Output
 
-The application helps improve productivity and reduces the chances of missing important tasks.
+Large Language Models (LLMs) can improve healthcare claims processing by automating repetitive tasks such as document review, claim classification, and summarization. They help reduce manual effort, improve accuracy, and speed up claim approvals. LLMs can also analyze medical documents, identify missing information, and assist customer support teams by answering common questions. This leads to faster processing times and improved efficiency for insurance companies and healthcare providers.
 
 ---
 
-## Prompt Used
+## 2. Pattern: Summarization Pattern
 
-**System Prompt:**
+### Information Provided Before the Prompt
 
-“You are an intelligent project assistant. Analyze the provided meeting notes and generate:
+“The AI team discussed deploying a new fraud detection model for insurance claims. Rajni will prepare the deployment pipeline by Monday. Aman will test the API integration. The security team requested additional validation checks before production release. The team agreed to complete testing in the staging environment first.”
 
-1. A concise meeting summary
-2. Key decisions made
-3. Action items with owners and deadlines
-4. Risks or blockers
-5. A professional follow-up email draft
+### Prompt
 
-Keep the response clear, structured, and professional.”
+“Summarize the following meeting notes into:
 
----
+1. Key discussion points
+2. Action items
+3. Risks or blockers
 
-## Sample Input
+Keep the summary short and professional.”
 
-“Today the AI claims processing team discussed integrating a new document classification model into the insurance workflow. Rajni will prepare the API integration by Friday. Aman will collect additional training data next week. The PEGA team is still waiting for configuration files from the business team, which may delay deployment. The team agreed to test the model in staging before production release.”
+### Output
 
----
+### Key Discussion Points
 
-## Sample Output
-
-### Meeting Summary
-
-The team discussed integrating a new AI document classification model into the insurance claims workflow. The deployment process and pending dependencies were reviewed.
-
-### Key Decisions
-
-* The model will first be tested in the staging environment.
-* Production deployment will happen only after successful validation.
+* The team discussed deployment of a new fraud detection model for insurance claims.
+* Testing will be completed in the staging environment before production release.
 
 ### Action Items
 
-| Task                             | Owner         | Deadline  |
-| -------------------------------- | ------------- | --------- |
-| Prepare API integration          | Rajni         | Friday    |
-| Collect additional training data | Aman          | Next week |
-| Share configuration files        | Business Team | Pending   |
+* Rajni will prepare the deployment pipeline by Monday.
+* Aman will test the API integration.
+* Security team will review validation checks.
 
 ### Risks / Blockers
 
-* Deployment may be delayed because the PEGA team is waiting for configuration files from the business team.
-
-### Follow-Up Email Draft
-
-Subject: Meeting Summary – AI Claims Processing Integration
-
-Hello Team,
-
-Today we discussed the integration of the AI document classification model into the insurance workflow. Rajni will complete the API integration by Friday, and Aman will collect additional training data next week.
-
-The PEGA team is currently waiting for configuration files from the business team, which may impact deployment timelines. The model will first be tested in the staging environment before moving to production.
-
-Please complete the assigned tasks as per the timeline.
-
-Best Regards,
-Project Team
-
----
-
-This prompt-based application demonstrates how Large Language Models can automate project coordination tasks, save time, and improve communication efficiency in real-world environments.
+* Additional validation requirements from the security team may delay production deployment.
