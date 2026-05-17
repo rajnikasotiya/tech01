@@ -1,27 +1,35 @@
-### 1. Sample Social Media Posts
+### 1. Sample Answer
 
-**Post 1:**
-I’ve been learning how powerful ChatGPT Code Interpreter can be for content creation, and it honestly feels like having an AI content team. I uploaded a technical AI project document and asked it to generate multiple social media posts from the material. In minutes, it created LinkedIn-style insights, short educational posts, and professional summaries tailored for different audiences.
+**Problem:** Managing time effectively while balancing AI projects, interview preparation, learning, and personal responsibilities.
 
-What impressed me most is that it didn’t just summarize the content — it identified key ideas, extracted valuable insights, and rewrote them into engaging social media formats. It even saved each post as separate files and packaged everything into a downloadable ZIP automatically. This could completely change how students, analysts, researchers, and creators repurpose long-form content into high-quality posts without spending hours editing manually.
+1. **Create a Structured Weekly Planning System**
+   Use a digital planner or spreadsheet to divide your week into focused blocks for coding practice, project work, interview preparation, exercise, and relaxation. Prioritize high-impact tasks first and assign deadlines to avoid procrastination. Code Interpreter can even help generate optimized schedules based on your workload patterns.
+
+2. **Automate Repetitive Workflows with AI Tools**
+   Leverage ChatGPT and Code Interpreter to automate repetitive tasks such as summarizing documents, generating reports, organizing notes, preparing presentations, and analyzing datasets. This reduces manual workload and frees up time for higher-value learning and problem-solving activities.
+
+3. **Apply the “Small Daily Progress” Strategy**
+   Instead of waiting for long uninterrupted study sessions, focus on consistent daily improvements. For example, spend 30–60 minutes daily on interview preparation, model tuning, or reading AI papers. Small consistent efforts compound over time and reduce burnout compared to irregular intensive sessions.
+
+4. **Build a Centralized Learning and Project Dashboard**
+   Maintain all project tasks, learning goals, certifications, deadlines, and ideas in a single dashboard using Excel, Notion, or Google Sheets. Track progress visually using charts or milestone trackers. This improves clarity, accountability, and motivation.
+
+5. **Reduce Context Switching and Improve Focus**
+   Constantly switching between tasks reduces productivity. Use focused work sessions such as the Pomodoro Technique or dedicated “deep work” hours where notifications and distractions are minimized. Group similar activities together, such as coding tasks, meetings, and research reading, to maintain momentum and mental efficiency.
 
 ---
 
-**Post 2:**
-One of the coolest AI workflows I’ve tried recently involved uploading a presentation about AI and healthcare analytics into ChatGPT Code Interpreter and asking it to generate social media content from the slides. The AI analyzed the document, identified important concepts, and created multiple professional posts explaining the ideas in a much more engaging way.
+### 2. Sample Questions for a Meeting or Class
 
-This is incredibly useful for anyone building a personal brand or sharing technical knowledge online. Instead of manually creating posts from reports, presentations, or meeting notes, you can let AI transform your documents into ready-to-share content automatically. It feels like turning static documents into an entire social media strategy with just a few prompts.
+1. What is the primary objective of the project or workflow discussed in this document?
+2. Which challenges or bottlenecks are currently affecting the system’s performance?
+3. What assumptions were made while designing the proposed solution?
+4. How does the architecture handle scalability and increasing data volume?
+5. What evaluation metrics are being used to measure success or model performance?
+6. Which parts of the workflow are automated, and which still require manual intervention?
+7. What risks or limitations were identified in the current implementation?
+8. How can this solution be improved using AI, NLP, or automation techniques?
+9. What are the dependencies between teams, systems, or external data sources?
+10. If this project were expanded in the future, what enhancements or additional capabilities would provide the greatest value?
 
----
 
-### 2. Sample Prompts Used
-
-1. “Read all uploaded images and create resized copies in multiple dimensions suitable for social media, thumbnails, presentations, and web use.”
-
-2. “Generate three resized versions of each image: small (256x256), medium (512x512), and large (1024x1024). Preserve image quality while maintaining aspect ratio.”
-
-3. “Save each transformed image with descriptive filenames that include the original filename and output size.”
-
-4. “Create a CSV catalog listing the original image name, transformed image filename, dimensions, file size, and transformation applied.”
-
-5. “Package all generated images and the CSV catalog into a ZIP file for download.”
