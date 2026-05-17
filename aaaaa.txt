@@ -1,38 +1,27 @@
-### 1. Sample CSV Process Summary
+### 1. Sample Social Media Posts
 
-| Step | Action Performed                                                                    | Output Produced                                    |
-| ---- | ----------------------------------------------------------------------------------- | -------------------------------------------------- |
-| 1    | Loaded and inspected the Vanderbilt 2022 Financial Report CSV file                  | Identified columns, trends, and financial metrics  |
-| 2    | Cleaned and formatted the data for analysis                                         | Structured dataset ready for visualization         |
-| 3    | Analyzed admissions rates, tuition trends, revenue growth, and operational expenses | Generated insights about institutional performance |
-| 4    | Created four visualizations with trend lines and Vanderbilt-themed colors           | Charts showing financial and admissions trends     |
-| 5    | Saved each visualization as a separate image file                                   | Downloadable PNG chart files                       |
-| 6    | Generated a PowerPoint presentation with one visualization per slide                | Presentation summarizing the analysis              |
-| 7    | Added chart titles, labels, and formatting improvements                             | Professional presentation output                   |
-| 8    | Reviewed the completed outputs for consistency and readability                      | Final downloadable PowerPoint and images           |
+**Post 1:**
+I’ve been learning how powerful ChatGPT Code Interpreter can be for content creation, and it honestly feels like having an AI content team. I uploaded a technical AI project document and asked it to generate multiple social media posts from the material. In minutes, it created LinkedIn-style insights, short educational posts, and professional summaries tailored for different audiences.
 
-The analysis revealed several interesting higher-education trends, including the relationship between admissions selectivity and institutional growth. The charts also showed how operational expenses and revenue streams evolved over time, reflecting the increasing complexity of university financial management. By automating the workflow from CSV analysis to slide generation, Code Interpreter significantly reduced the manual effort required to produce professional analytics presentations.
+What impressed me most is that it didn’t just summarize the content — it identified key ideas, extracted valuable insights, and rewrote them into engaging social media formats. It even saved each post as separate files and packaged everything into a downloadable ZIP automatically. This could completely change how students, analysts, researchers, and creators repurpose long-form content into high-quality posts without spending hours editing manually.
 
 ---
 
-### 2. Sample Social Media Post
+**Post 2:**
+One of the coolest AI workflows I’ve tried recently involved uploading a presentation about AI and healthcare analytics into ChatGPT Code Interpreter and asking it to generate social media content from the slides. The AI analyzed the document, identified important concepts, and created multiple professional posts explaining the ideas in a much more engaging way.
 
-I’ve been experimenting with the Coursera course “ChatGPT Code Interpreter by Jules White,” and I’m honestly surprised by how powerful AI becomes when you combine prompts with real-world data files.
+This is incredibly useful for anyone building a personal brand or sharing technical knowledge online. Instead of manually creating posts from reports, presentations, or meeting notes, you can let AI transform your documents into ready-to-share content automatically. It feels like turning static documents into an entire social media strategy with just a few prompts.
 
-Today I uploaded a CSV extracted from Vanderbilt University’s 2022 financial report into Code Interpreter and used a sequence of prompts to automatically analyze the data, create visualizations, discover trends, and even generate presentation-ready insights. What normally takes hours in Excel and PowerPoint happened in minutes.
+---
 
-One of the most interesting findings was how operational growth, admissions selectivity, and financial expansion moved together over time. By visualizing the data with trend lines and automated analysis, it became much easier to see patterns that would have been difficult to notice manually.
+### 2. Sample Prompts Used
 
-The workflow was incredibly simple:
+1. “Read all uploaded images and create resized copies in multiple dimensions suitable for social media, thumbnails, presentations, and web use.”
 
-1. Upload the CSV file
-2. Ask ChatGPT to explain the columns
-3. Request visualizations with trend lines
-4. Ask it to save charts as images
-5. Generate a PowerPoint automatically
+2. “Generate three resized versions of each image: small (256x256), medium (512x512), and large (1024x1024). Preserve image quality while maintaining aspect ratio.”
 
-Example prompt:
+3. “Save each transformed image with descriptive filenames that include the original filename and output size.”
 
-“Read and explain the data in the uploaded CSV. Create four interesting visualizations with trend lines showing admissions, revenue, and expense patterns over time. Save the charts as images and generate a PowerPoint presentation with one chart per slide.”
+4. “Create a CSV catalog listing the original image name, transformed image filename, dimensions, file size, and transformation applied.”
 
-This feels like having a data analyst, visualization expert, and presentation designer all built into one AI workflow. For anyone working in analytics, AI, healthcare, research, finance, or operations, this can dramatically speed up reporting and insight generation.
+5. “Package all generated images and the CSV catalog into a ZIP file for download.”
