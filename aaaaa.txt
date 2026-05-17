@@ -1,41 +1,23 @@
-### 1. Three Problems That Are Inappropriate to Solve with Generative AI
+### 1. Filtering and Traceability Prompt
 
-1. **Making Fully Autonomous Medical Decisions Without Human Oversight**
-   Generative AI can assist doctors by summarizing patient records, identifying trends, or explaining medical concepts, but it should not independently diagnose illnesses or make final treatment decisions without expert review. AI models can produce incorrect or hallucinated information, may miss important context, and do not truly understand patient conditions. In healthcare, even small mistakes can lead to serious consequences. From the course, one important lesson was that generative AI works best as an assistant for humans rather than as a replacement for expert judgment in high-risk environments.
+**Prompt:**
+“Analyze the uploaded healthcare claims dataset and filter all claims with bill amounts greater than $10,000 and approval status marked as ‘Pending’ or ‘Rejected.’ For every filtered result, maintain traceability by preserving the original claim identifiers, member IDs, provider IDs, and claim dates from the source data. Generate a summary table showing the filtered claims, the reason they were selected, and any detected anomalies or missing fields. Do not remove or modify source identifiers. Include a section mapping every generated insight back to the original claim ID for auditing purposes.”
 
-2. **High-Stakes Legal or Financial Decisions**
-   Generative AI should not be trusted to independently create legally binding contracts, provide final legal rulings, or make investment decisions involving significant financial risk. AI systems may generate convincing but inaccurate information, misunderstand laws, or fail to account for regional regulations and recent legal updates. For example, relying completely on AI for tax filings, compliance decisions, or investment strategies could create serious legal and financial problems. Human professionals are still required to verify accuracy, context, and ethical considerations.
+**Sample Output:**
+The analysis identified 24 healthcare claims with bill amounts exceeding $10,000 that were either pending or rejected. All original identifiers, including claim IDs, member IDs, provider IDs, and claim dates, were preserved to maintain traceability and support auditing requirements. Several claims were flagged due to missing diagnosis codes, incomplete supporting documents, or inconsistencies between billed services and policy coverage rules.
 
-3. **Deciding Hiring, Promotions, or Sensitive Human Evaluations Without Transparency**
-   Using generative AI as the sole decision-maker for hiring, employee evaluations, admissions, or promotions is inappropriate because AI systems can inherit bias from training data and may produce unfair or non-transparent decisions. While AI can help summarize resumes, identify skills, or assist with screening, humans should remain responsible for final evaluations. The course emphasized that AI outputs should always be reviewed critically, especially when fairness, ethics, and human opportunities are involved.
-
-Overall, generative AI is most effective when used as a productivity and decision-support tool rather than an unquestioned authority. Human oversight, validation, and accountability remain essential for sensitive or high-impact decisions.
+The filtered results also revealed that multiple rejected claims originated from the same provider group, suggesting possible workflow or documentation issues. By maintaining direct mappings to the original claim identifiers, every generated insight can be traced back to the source records, improving transparency, compliance, and operational review processes.
 
 ---
 
-### 2. ACHIEVE Framework Examples
+### 2. Navigation-Based Prompt
 
-The ACHIEVE framework can help structure how generative AI is applied to real-world problems in a practical and responsible way. Below are examples related to AI projects, healthcare analytics, and personal productivity.
+**Prompt:**
+“You are acting as an AI navigation assistant for a new team member joining an AI healthcare analytics project. Read the uploaded project documentation and generate a structured navigation guide explaining how to move through the project materials. Identify the most important sections, dependencies, workflows, datasets, APIs, and configuration files. Create a step-by-step roadmap showing what a beginner should review first, second, and third in order to understand the system efficiently. Include references to important files and explain how different components connect to each other.”
 
-* **A – Automate Repetitive Tasks**
-  I can use generative AI to automate repetitive documentation tasks in healthcare analytics projects, such as summarizing medical claim documents, extracting important fields, and generating structured reports automatically from uploaded PDFs.
+**Sample Output:**
+The project documentation is organized into several major sections, including data ingestion, NLP processing, claims analysis workflows, API integration, and reporting dashboards. A new team member should begin by reviewing the architecture overview and business workflow documents to understand the purpose of the system and how healthcare claims are processed end-to-end.
 
-* **C – Collect and Organize Information**
-  AI can help gather and organize information from research papers, meeting notes, datasets, and project documentation into searchable summaries or dashboards. For example, I could upload NLP research papers and ask AI to generate categorized notes and implementation ideas.
+After reviewing the architecture, the next recommended step is exploring the configuration files and API integration modules, which define how external services and datasets are connected. The documentation also highlights dependencies on provider data, policy rules, and claim validation workflows. Finally, the reporting and visualization section explains how processed claim data is transformed into dashboards and operational insights for analysts and business stakeholders.
 
-* **H – Help with Creativity and Ideation**
-  Generative AI is useful for brainstorming project ideas, designing AI workflows, generating presentation outlines, and creating content for LinkedIn or technical blogs. It can quickly generate multiple approaches to solving AI or automation problems.
-
-* **I – Improve Communication**
-  AI can rewrite technical explanations for non-technical audiences, improve email drafts, summarize meetings, and generate professional presentations. This is especially useful when communicating AI concepts to business stakeholders or healthcare teams.
-
-* **E – Enhance Learning and Skill Development**
-  I can use AI to explain difficult machine learning concepts, generate coding exercises, create interview questions, and provide personalized study plans for NLP, FastAPI, or Generative AI topics.
-
-* **V – Visualize Data and Insights**
-  Using tools like Code Interpreter, AI can automatically generate charts, dashboards, and PowerPoint slides from datasets. For example, healthcare claim trends or model evaluation metrics can be visualized for presentations and analysis.
-
-* **E – Evaluate and Refine Solutions**
-  AI can help compare multiple machine learning models, summarize evaluation metrics, suggest optimizations, and identify weaknesses in workflows or project architectures. This supports continuous improvement in AI systems and operational processes.
-
-The ACHIEVE framework demonstrates that generative AI is most valuable when applied thoughtfully to enhance productivity, creativity, learning, communication, and decision support while keeping humans actively involved in reviewing and guiding outcomes.
+This navigation guide provides a structured learning path so new contributors can understand the project more efficiently without becoming overwhelmed by the volume of technical documentation.
