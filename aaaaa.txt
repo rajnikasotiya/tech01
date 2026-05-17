@@ -1,96 +1,31 @@
-## 1. Few-Shot Prompt for a Complex Task
+### 1. Sample Answer
 
-### Task: Classifying Customer Support Tickets
+The visualizations reveal several unexpected trends in Vanderbilt’s financial data when compared with broader higher education patterns. One chart showed that administrative and operational expenses increased at a faster rate than instructional spending, reflecting a growing national trend in universities where support services and infrastructure consume a larger share of institutional budgets. Another visualization highlighted fluctuations in research funding that did not directly correlate with tuition increases, suggesting that external grants and partnerships may play a larger role in institutional growth than student revenue alone.
 
-### Prompt
+A third visualization demonstrated that endowment growth remained relatively stable even during years where operational costs sharply increased, indicating that universities may rely heavily on long-term investment strategies to maintain financial stability. The fourth chart compared tuition revenue against financial aid expenditures and revealed that increases in tuition were often accompanied by proportional increases in institutional aid, reflecting the complex balance universities maintain between affordability and revenue generation.
 
-“You are an AI support assistant. Classify customer support messages into categories: Billing Issue, Technical Problem, Account Access, or General Inquiry.
-
-Example 1:
-Input: ‘I was charged twice for my subscription this month.’
-Output: Billing Issue
-
-Example 2:
-Input: ‘The application crashes whenever I upload a document.’
-Output: Technical Problem
-
-Example 3:
-Input: ‘I forgot my password and cannot log into my account.’
-Output: Account Access
-
-Now classify this message:
-‘My payment went through, but my premium features are still locked.’”
-
-### Sample Output
-
-Billing Issue
+Overall, the dataset suggests that modern higher education institutions operate less like traditional teaching-focused organizations and more like diversified enterprises with multiple revenue streams, including investments, healthcare partnerships, grants, and auxiliary services. These trends highlight how universities adapt financially to changing enrollment patterns, rising operational costs, and increased competition for research funding.
 
 ---
 
-## 2. Few-Shot Prompt with Intermediate Sub-Steps
+### 2. Sample Answer
 
-### Task: Extracting Action Items from Meeting Notes
+A prompt pattern is a reusable way of structuring instructions to help ChatGPT consistently solve a particular type of problem. Instead of writing completely new prompts every time, you can use a repeatable template that guides the AI through a process step by step. For someone working in AI, NLP, or healthcare analytics, prompt patterns can make document analysis, summarization, and data extraction much faster and more reliable. For example, if you regularly analyze insurance claim documents, you could create a prompt pattern that tells ChatGPT to extract diagnosis information, identify missing fields, summarize approval risks, and generate recommendations automatically from uploaded PDFs.
 
-### Prompt
+One useful pattern is the “Persona Pattern,” where ChatGPT is instructed to act like a domain expert. For instance, you could upload patient records or medical policy documents and use a prompt such as: “Act as a healthcare claims analyst. Review the uploaded document, identify approval risks, summarize important medical findings, and generate a structured decision report.” This pattern works well because it gives the AI a clear role, defines the task, and specifies the desired output format.
 
-“You are an AI meeting assistant. Perform the following steps:
+Another valuable pattern is the “Flipped Interaction Pattern,” where the AI asks questions before completing the task. In your case, ChatGPT could first ask what type of medical claims you are analyzing or what business rules matter most before generating insights. This improves personalization and makes the results more relevant to real-world workflows. These prompt patterns are especially powerful with Code Interpreter because they can combine document reading, data analysis, visualization, and report generation in a single workflow.
 
-1. Identify important tasks mentioned in the text.
-2. Identify the owner of each task.
-3. Identify deadlines if available.
-4. Present the final answer in a table.
+---
 
-Example 1:
+### 3. Sample Social Media Post
 
-Input:
-‘Raj will prepare the API documentation by Friday. Aman will test the login module next week.’
+I’ve been exploring the Coursera course “ChatGPT Code Interpreter by Jules White,” and one of the most powerful things I learned is how reusable prompt patterns can completely transform document and data analysis workflows.
 
-Step 1: Tasks Identified
+The most useful prompt pattern for people working with AI, healthcare data, insurance claims, or analytics is the “Persona + Structured Output Pattern.” Instead of giving random instructions every time, you create a reusable template that tells ChatGPT exactly how to think and what format to produce. With Code Interpreter, you can upload PDFs, spreadsheets, policy documents, medical records, or research reports and instantly turn them into structured insights, summaries, charts, and recommendations.
 
-* Prepare API documentation
-* Test login module
+Example prompt you can directly paste into Code Interpreter:
 
-Step 2: Owners Identified
+“Act as a healthcare claims analyst. Review the uploaded files and identify important medical details, missing information, potential approval risks, and policy compliance issues. Generate a structured report with summaries, tables, and visualizations showing trends or anomalies. If information is unclear, ask follow-up questions before making conclusions.”
 
-* Raj
-* Aman
-
-Step 3: Deadlines Identified
-
-* Friday
-* Next week
-
-Final Output:
-
-| Task                      | Owner | Deadline  |
-| ------------------------- | ----- | --------- |
-| Prepare API documentation | Raj   | Friday    |
-| Test login module         | Aman  | Next week |
-
-Now process this input:
-
-‘Neha will deploy the fraud detection model by Monday. Ravi will validate the staging environment before production release.’”
-
-### Sample Output
-
-Step 1: Tasks Identified
-
-* Deploy fraud detection model
-* Validate staging environment
-
-Step 2: Owners Identified
-
-* Neha
-* Ravi
-
-Step 3: Deadlines Identified
-
-* Monday
-* Before production release
-
-Final Output:
-
-| Task                         | Owner | Deadline                  |
-| ---------------------------- | ----- | ------------------------- |
-| Deploy fraud detection model | Neha  | Monday                    |
-| Validate staging environment | Ravi  | Before production release |
+This is incredibly useful because it eliminates hours of manual review work. Imagine uploading hundreds of claims documents, research papers, financial reports, or operational spreadsheets and getting instant insights, trend analysis, and executive summaries. The combination of prompt patterns + Code Interpreter feels less like chatting with AI and more like having a full analytical assistant working beside you.
